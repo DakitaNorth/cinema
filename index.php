@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>CinemaStar</title>
+    <link rel="stylesheet" href=css/cssMM.css>
   </head>
   <body>
     <h1 class="">Кинотеатр "Синема Стар"</h1>
