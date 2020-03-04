@@ -235,7 +235,7 @@
     <section class="modal-login">
       <h2 class="modal-login__title"></h2>
       <p class="modal-login__text"></p>
-      <form class="modal-login__form" method="get">
+      <form class="modal-login__form" action="PHP/authorization/getAutho.php" method="get">
         <label class="modal-login__label">
           <input class="modal-login__input" type="text" name="login" placeholder="Логин">
         </label>
