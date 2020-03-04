@@ -1,3 +1,13 @@
+<?php 
+session_start();
+$mess = $_SESSION['message'];
+if(isset($mess)) {
+  echo "<p class='message_by_server'>" . $mess . "</p>"; 
+  $_SESSION['message'] = Null;
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>

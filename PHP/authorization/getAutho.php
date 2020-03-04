@@ -13,11 +13,11 @@
 	if (empty($myRow['id'])) {
 		exit("<p>Неправильно введен логин/пароль</p>");
 	} else{
-		$filename = "../../index.php"; 
+		$filename = "Location: ../../index.php"; 
 		$_SESSION['login'] = $myRow['login'];
 		$_SESSION['id'] = $myRow['id'];
-		$data = file_get_contents($filename);
-		echo $data;
+		$_SESSION['message'] = "Вы успешно авторизовались";
+		header($filename);
 	};
 
 ?>
