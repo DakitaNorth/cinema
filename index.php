@@ -1,25 +1,48 @@
-<?php 
-session_start();
-$mess = $_SESSION['message'];
-if(isset($mess)) {
-  echo "<p class='message_by_server'>" . $mess . "</p>"; 
-  $_SESSION['message'] = Null;
-
-}
-?>
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>CinemaStar</title>
-    <link rel="stylesheet" href=css/cssMM.css>
+    <link href="fonts/OpenSans-Regular.woff2" rel="preload" as="font">
+    <link href="fonts/OpenSans-Regular.woff" rel="preload" as="font">
+    <link href="fonts/OpenSans-Bold.woff2" rel="preload" as="font">
+    <link href="fonts/OpenSans-Bold.woff" rel="preload" as="font">
+    <link rel="stylesheet" href=css/style.css>
   </head>
   <body>
-    <h1 class="">Кинотеатр "Синема Стар"</h1>
     <header class="header">
       <nav class="header__navigation">
-        <img class="header__img" src="" width="" height="" alt="">
+        <a class="header__link logo__link"
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%;">
+            <defs>
+              <clipPath id="animationMask_0NGnqnd6yx">
+                <rect width="100" height="100" x="0" y="0"></rect>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#animationMask_0NGnqnd6yx)">
+              <g transform="matrix(-3.2688900000000003,0,0,-3.2688900000000003,2144.5896000000002,1224.8004)" opacity="1">
+                <rect width="1280" height="720" fill="#ffffff"></rect>
+              </g>
+              <g  onloadedmetadata=""style="user-select: none;" transform="matrix(0.8943800000000001,0,0,0.8943800000000001,-376.80240000000003,-202.42640000000003)" opacity="1">
+                <g opacity="1" transform="matrix(1,0,0,1,479.296,280.015)">
+                  <path fill="rgb(0,79,156)" fill-opacity="1" d="M0 0 M49.5,0 C49.5,27.338 27.338,49.5 0,49.5 C-27.338,49.5 -49.5,27.338 -49.5,0 C-49.5,-27.338 -27.338,-49.5 0,-49.5 C27.338,-49.5 49.5,-27.338 49.5,0z"></path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,483.296,282.015)">
+                  <path fill="rgb(0,180,238)" fill-opacity="1" d="M0 0 M40.796,0 C40.796,22.531 22.531,40.796 0,40.796 C-22.531,40.796 -40.796,22.531 -40.796,0 C-40.796,-22.531 -22.531,-40.796 0,-40.796 C22.531,-40.796 40.796,-22.531 40.796,0z"></path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,485.296,286.015)">
+                  <path fill="rgb(172,208,58)" fill-opacity="1" d="M0 0 M32.094,0 C32.094,17.725 17.725,32.094 0,32.094 C-17.725,32.094 -32.094,17.725 -32.094,0 C-32.094,-17.725 -17.725,-32.094 0,-32.094 C17.725,-32.094 32.094,-17.725 32.094,0z"></path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,489.296,287.015)">
+                  <path fill="rgb(236,54,128)" fill-opacity="1" d="M0 0 M23.39,0 C23.39,12.918 12.918,23.39 0,23.39 C-12.918,23.39 -23.39,12.918 -23.39,0 C-23.39,-12.918 -12.918,-23.39 0,-23.39 C12.918,-23.39 23.39,-12.918 23.39,0z"></path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,508,278.066)">
+                  <path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M21.482,1.436 C21.482,-6.219 19.872999999999998,-13.591999999999999 16.639,-19.936 C16.489,-11.782 12.669000000000004,5.297 -21.482,9.85 C-14.687999999999999,16.107 -5.602000000000001,19.936 4.387,19.936 C9.539,19.936 14.482,18.896 18.964,17.052 C20.762,12.062 21.482,6.904 21.482,1.436z"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
         <ul class="header__list">
           <li class="header__item"><a href="#">Новости</a></li>
           <li class="header__item"><a href="#">Кинотеатры</a></li>
@@ -29,6 +52,7 @@ if(isset($mess)) {
       </nav>
     </header>
     <main class="main">
+      <h1 class="visually-hidden">Кинотеатр "Синема Стар"</h1>
       <section class="main__slider">
 
       </section>
@@ -36,7 +60,7 @@ if(isset($mess)) {
         <h2 class="tech__title">Технологии:</h2>
         <ul class="tech__list">
           <li class="tech__item">
-            <img class="tech__img" src="" width="" height="" alt="">
+            <img class="tech__img" src="img/img_atmos.jpg" width="364" height="177" alt="Фото технологии">
             <span class="tech__title">звук dolby atmos</span>
             <p class="tech__text">
               Оживляет происходящее на экране
@@ -46,7 +70,7 @@ if(isset($mess)) {
             </p>
           </li>
           <li class="tech__item">
-            <img class="tech__img" src="" width="" height="" alt="">
+            <img class="tech__img" src="img/img_dbox.jpg" width="364" height="177" alt="Фото технологии">
             <span class="tech__title">Кресла с системой d-box</span>
             <p class="tech__text">
               Могут вибрировать
@@ -56,7 +80,7 @@ if(isset($mess)) {
             </p>
           </li>
           <li class="tech__item">
-            <img class="tech__img" src="" width="" height="" alt="">
+            <img class="tech__img" src="img/img_harkness.jpg" width="364" height="177" alt="Фото технологии">
             <span class="tech__title">Harkness Screens</span>
             <p class="tech__text">
               Обеспечивает лучший контраст,
@@ -242,22 +266,61 @@ if(isset($mess)) {
         <button class="button footer-map__button" type="button">Показать на карте</button>
       </div>
     </footer>
-    <section class="modal-login">
-      <h2 class="modal-login__title"></h2>
-      <p class="modal-login__text"></p>
-      <form class="modal-login__form" action="PHP/authorization/getAutho.php" method="get">
-        <label class="modal-login__label">
-          <input class="modal-login__input" type="text" name="login" placeholder="Логин">
-        </label>
-        <label class="modal-login__label">
-          <input class="modal-login__input" type="text" name="password" placeholder="Пароль">
-        </label>
-        <input class="modal-login__input" id="remember-input" type="checkbox" name="remember" value="remember">
-        <label for="remember-input">
-          Запомните меня
-        </label>
-        <a class="modal-login__forgot">Забыли данные?</a>
-        <button class="button modal-login__button" type="submit">Войти</button>
+    <section class="modal-entrance">
+      <form class="modal-entrance__form" action="PHP/authorization/getAutho.php" method="get">
+        <div class="modal-entrance__login modal-login">
+          <h2 class="modal-login__title">Личный кабинет</h2>
+          <p class="modal-login__text">Вы уже были у нас?</p>
+          <label class="modal-login__label">
+            <input class="modal-login__input" type="text" name="login" placeholder="Логин">
+          </label>
+          <label class="modal-login__label">
+            <input class="modal-login__input" type="text" name="password" placeholder="Пароль">
+          </label>
+          <input class="modal-login__input" id="remember-input" type="checkbox" name="remember" value="remember">
+          <label for="remember-input">
+            Запомните меня
+          </label>
+          <div class="modal-login__wrapper">
+            <a class="modal-login__forgot">Забыли данные?</a>
+            <button class="modal-login__registration-button" type="button">Регистрация</button>
+          </div>
+          <button class="button modal-login__button" type="submit">Войти</button>
+          <ul class="modal-login__social">
+            <li>
+              <a class="modal-login__link" href="#">
+                <span class="visually-hidden">Вход через Вк</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li>
+              <a class="modal-login__link" href="#">
+                <span class="visually-hidden">Вход через Google</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li>
+              <a class="modal-login__link" href="#">
+                <span class="visually-hidden">Вход через Facebook</span>
+                <svg></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-entrance__registration modal-registration">
+          <h2 class="modal-registration__title">Форма регистрации</h2>
+          <p class="modal-registration__text">Придумайте логин и пароль</p>
+          <label class="modal-registration__label">
+            <input class="modal-registration__input" type="text" name="login-reg" placeholder="Логин" required>
+          </label>
+          <label class="modal-registration__label">
+            <input class="modal-registration__input" type="tel" name="tel-reg" placeholder="Телефон" pattern="" required>
+          </label>
+          <label class="modal-registration__label">
+            <input class="modal-registration__input" type="text" name="password-reg" placeholder="Пароль" required>
+          </label>
+          <button class="button modal-registration__button" type="submit">Зарегистрироваться</button>
+        </div>
       </form>
     </section>
   </body>
