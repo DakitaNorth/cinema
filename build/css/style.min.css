@@ -7,13 +7,16 @@ body {
   font-weight: 400;
   color: #000000;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -29,11 +32,13 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .container {
   width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .button {
   position: relative;
   display: inline-block;
@@ -42,8 +47,10 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
 }
+
 .button::after {
   content: "";
   position: absolute;
@@ -52,17 +59,20 @@ input[type="radio"].visually-hidden {
   border: 1px solid #312783;
   z-index: -1;
 }
+
 .title {
   padding-left: 40px;
   margin: 0;
   font-size: 36px;
   font-weight: 700;
 }
+
 .header__link-logo {
   display: block;
   width: 100px;
   height: 100px;
 }
+
 .header__navigation {
   display: flex;
   justify-content: space-between;
@@ -70,6 +80,7 @@ input[type="radio"].visually-hidden {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .header__list {
   display: flex;
   justify-content: space-between;
@@ -81,9 +92,11 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   list-style: none;
 }
+
 .header__item a {
   color: #000000;
 }
+
 .tech__list {
   display: flex;
   justify-content: space-between;
@@ -93,26 +106,35 @@ input[type="radio"].visually-hidden {
   padding-top: 65px;
   list-style: none;
 }
+
 .tech__item {
   display: flex;
   flex-direction: column;
   font-size: 16px;
 }
+
 .tech__name {
   padding-top: 10px;
-  padding-left: 10px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .tech__text {
   width: 364px;
 }
+
+.catalog {
+  margin-bottom: 45px;
+}
+
 .catalog__title {
   padding-top: 50px;
 }
+
 .catalog-item-wrapper {
   margin-left: 30px;
 }
+
 .catalog__list {
   display: flex;
   justify-content: space-between;
@@ -122,41 +144,58 @@ input[type="radio"].visually-hidden {
   margin: 0;
   list-style: none;
 }
+
 .catalog-item {
   display: flex;
   width: 635px;
+  margin-bottom: 40px;
 }
+
 .catalog-item__name {
   font-size: 24px;
 }
+
 .catalog-item__list {
   display: flex;
   justify-content: space-between;
+  width: 300px;
   padding: 0;
   margin: 0;
+  margin-top: 5px;
   list-style: none;
 }
+
+.catalog-item__shell {
+  margin-left: 10px;
+}
+
 .catalog-item__info {
   font-size: 12px;
 }
+
 .catalog-item__buttons-wrapper {
   display: flex;
 }
+
 .catalog-item__buttons {
   display: flex;
   flex-direction: column;
 }
+
 .catalog-item__buttons a:first-child {
   margin-bottom: 10px;
 }
+
 .catalog-item__tick::after {
   width: 158px;
   height: 40px;
 }
+
 .catalog-item__reviews::after {
   width: 158px;
   height: 40px;
 }
+
 .catalog-item__age {
   display: flex;
   justify-content: center;
@@ -167,9 +206,82 @@ input[type="radio"].visually-hidden {
   line-height: 48px;
   font-weight: 400;
 }
+
 .catalog-item__age::after {
   width: 110px;
   height: 90px;
+}
+
+.catalog-item__text {
+  height: 180px;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  background-color: #e6e6e6;
+}
+
+.footer-info__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-info__title {
+  font-weight: 700;
+}
+
+.footer-map__text {
+  width: 450px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.footer-info__button,
+.footer-map__button {
+  line-height: 20px;
+  border: none;
+}
+
+.footer-info__button {
+  margin-top: 35px;
+}
+
+.footer-map__button {
+  margin-top: 50px;
+}
+
+.footer-info__button::after {
+  width: 122px;
+  height: 40px;
+}
+
+.footer-map__button::after {
+  width: 191px;
+  height: 40px;
+}
+
+.footer-map {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=style.min.css.map */
