@@ -1,0 +1,36 @@
+{
+  "name": "cinema-1.0",
+  "version": "17.0.0",
+  "description": "\"Личный проект кино-сайта\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DakitaNorth/cinema.git"
+  },
+  "author": "DakitaNorth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DakitaNorth/cinema/issues"
+  },
+  "homepage": "https://github.com/DakitaNorth/cinema#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^7.0.1"
+  }
+}
